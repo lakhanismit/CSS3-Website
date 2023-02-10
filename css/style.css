@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-color: #a8ccee5e;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #D84639;
+    --white-color: #fff;
+    --black-color: #101010;
+    --gray-color: #3A4964;
+    --shadow-color: #798d90;
+    --hover-color: #ab2c20;
+    --btn-bg-color: #c4d9f6;
+    --btn-font-color: #3A4964;
+}
+/* ================================= DEFAULT CSS ================================= */
+.container{
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    position: relative;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.d-flex{
+    display: flex;
+}
+.j-cb{
+    justify-content: space-between;
+}
+.j-cc{
+    justify-content: center;
+}
+.a-ic{
+    align-items: center;
+}
+.a-ie{
+    align-items: flex-end;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.spacing-mar{
+    margin-top: 50px;
+}
+.spacing{
+    margin-bottom: 100px;
+}
+.min-spacing{
+    margin-bottom: 50px;
+}
+/* DEFAULT FONTS */
+h1, h2, h3, h4, a{
+    color: var(--black-color);
+}
+h1{
+    font-size: 88px;
+    line-height: 88.3px;
+}
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 30px;
+    line-height: 36.1px;
+}
+h4{
+    font-size: 22px;
+    line-height: 28px;
+}
+p{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--gray-color);
+}
+/* DEFAULT DIV */
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.d-2{
+    width: 30%;
+}
+.d-3{
+    width: 70%;
+}
+/* DEFAULT BUTTON */
+.btn, .same-as-btn, .news-as-btn{
+    color: var(--btn-font-color);
+    font-weight: 900;
+    background-color: var(--btn-bg-color);
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 15px;
+    transition: .5s;
+}
+.btn:hover, .car-2 .w-3:last-child .btn:hover, .service-banner-content .btn:hover, .news-btn:hover, .news-as-btn:hover{
+    background-color: var(--hover-color);
+    color: var(--white-color);
+}
+/* GO TO TOP */
+.go-to-top{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    color: var(--primary-color);
+    z-index: 99;
+}
+/* ================================= HEADER ================================= */
+header{
+    position: sticky;
+    background-color: var(--white-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.m-logo{
+    width: 200px;
+    padding: 10px;
+}
+.m-logo img{
+    width: 100%;
+}
+nav ul li a{
+    padding: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+nav ul li:last-child a, nav ul li a:hover, footer nav ul li:last-child a:hover, .news-link:hover, .location-1 ul li a:hover{
+    color: var(--primary-color);
+}
+.container ul li:last-child a{
+    padding-right: 0;
+}
+/* ================================= BANNER ================================= */
+.banner h4{
+    color: var(--primary-color);
+}
+.banner h1, .banner h4{
+    text-align: center;
+}
+.banner h1{
+    text-shadow: 3px 3px var(--primary-color);
+    width: 80%;
+    margin: 20px auto;
+}
+/* ================================= CAR-1 ================================= */
+.car-1 .w-3, .car-2 .w-3, .car-3 .w-3, .car-3-content .w-3, .about .w-2{
+    border-radius: 10px;
+    padding: 10px;
+}
+.car-1 .w-3, .car-3 .w-3, .about .w-2{
+    background-color: var(--white-color);
+    margin: 10px;
+    box-shadow: 0px 3px 1px var(--shadow-color);
+}
+.img-2{
+    width: 200px;
+    padding: 10px;
+}
+.car-1content{
+    padding-left: 30px;
+}
+/* ================================= CAR-2 ================================= */
+.car-2 .w-3, .deposit-card .w-2, .news-first .w-3, .about .d-3 h2{
+    margin: 20px;
+}
+.car-2 .w-3 img, .img-14{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.img-8, .img-9, .img-14{
+    transition: .5s;
+}
+.img-8:hover, .img-9:hover{
+    transform: scale(1.1);
+}
+.car-2 .w-3 h3{
+    margin: 15px 0px;
+}
+.car-2 .w-3 p, .car-2 .w-3:last-child p, .news-first .d-2 p{
+    text-align: justify;
+}
+.car-2 .w-3:last-child, .service-banner-content{
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+.car-2 .w-3:last-child h4, .car-2 .w-3:last-child h2, .service-banner-content h2, .service-banner-content p{
+    margin: 20px 0px;
+}
+.car-2 .w-3:last-child h4, .car-2 .w-3:last-child h2, .car-2 .w-3:last-child p, .service-banner h2, .service-banner-content p{
+    color: var(--white-color);
+}
+.car-2 .w-3:last-child h2{
+    font-size: 25px;
+    width: 67%;
+}
+.car-2 .w-3:last-child .btn, .service-banner-content .btn{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+/* ================================= CAR-3 ================================= */
+.car-3-h2{
+    text-align: center;
+}
+.img10{
+    width: 100%;
+}
+.same-as-btn, .news-as-btn{
+    width: fit-content;
+    padding: 5px;
+}
+.same-as-btn, .c-3{
+    margin-top: 10px;
+}
+.c-3{
+    width: 25%;
+}
+.c-3 .d-3, .about-name .d-3 h3{
+    display: table-cell;
+    flex-direction: column;
+}
+.fa-user-group, .fa-suitcase, .fa-gears{
+    opacity: 0.5;
+}
+.all-car-btn, .depo-card-btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    width: 250px;
+}
+/* ================================= SERVICE ================================= */
+.service-banner{
+    background-image: url(../images/asset\ 25.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.service-banner-content{
+    width: 39%;
+    padding: 50px;
+    position: absolute;
+    bottom: -50px;
+    left: 90px;
+}
+.service-banner-content p{
+    width: 80%;
+    margin-bottom: 50px;
+}
+/* ================================= DEPOSIT CARD ================================= */
+.card-img{
+    width: 100%;
+}
+.deposit-card h2, .deposit-card p{
+    margin: 50px 0px;
+}
+.deposit-card h2{
+    width: 50%;
+    line-height: 60px;
+}
+/* ================================= NEWS & DEALS ================================= */
+.img-14:hover{
+    filter: saturate(150%);
+}
+.news-date{
+    margin: 5px auto;
+}
+.news-link{
+    font-size: 20px;
+    font-weight: 700;
+}
+.news-btn{
+    width: 800px;
+}
+/* ================================= ABOUT ================================= */
+.about .d-2 img{
+    width: 100%;
+    height: 100%;
+}
+.about .d-3{
+    background-color: var(--btn-bg-color);
+}
+.about-name .d-3{
+    background-color: var(--white-color);
+}
+.about-name img{
+    height: 100px;
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* ================================= FOOTER ================================= */
+footer{
+    background-color: var(--black-color);
+}
+footer a, footer nav ul li:last-child a, .footer-main h3{
+    color: var(--white-color);
+}
+footer hr{
+    margin: 20px auto;
+    width: 1140px;
+    opacity: .4;
+}
+.location-1, .footer-last{
+    padding: 10px;
+}
+.location-1 ul li{
+    margin: 20px 0px;
+}
+.foot-icon{
+    margin-right: 10px;
+    font-size: 20px;
+}
